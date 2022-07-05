@@ -4,27 +4,22 @@
   <listeners>
     <listener class-name="com.mystore.utility.ListenersClass"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Sanity(failed)">
     <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.mystore.testcases.EndToEnd">
+      <class name="com.mystore.testcases.AddToCartTests">
         <methods>
+          <include name="clickOnProduct" invocation-numbers="0"/>
           <include name="loadConfig"/>
-          <include name="afterSuite"/>
-          <include name="endToEndTest" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.mystore.testcases.EndToEnd -->
-      <class name="com.mystore.testcases.OrderPageTests">
-        <methods>
-          <include name="loadConfig"/>
-          <include name="afterSuite"/>
-          <include name="verifyTotalPrice" invocation-numbers="0"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.OrderPageTests -->
+      </class> <!-- com.mystore.testcases.AddToCartTests -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Sanity(failed) -->
 </suite> <!-- Failed suite [Suite] -->

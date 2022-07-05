@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="14" total="17" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-05T13:54:06 IST" name="CrossBrowser" finished-at="2022-07-05T13:55:17 IST" duration-ms="70581">
+  <suite started-at="2022-07-05T17:00:50 IST" name="Suite" finished-at="2022-07-05T17:01:45 IST" duration-ms="54859">
     <groups>
+      <group name="Sanity">
+        <method signature="AccountCreationTests.validateCreateText(java.lang.String)[pri:0, instance:com.mystore.testcases.AccountCreationTests@65b3f4a4]" name="validateCreateText" class="com.mystore.testcases.AccountCreationTests"/>
+        <method signature="AddToCartTests.clickOnProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartTests@f2ff811]" name="clickOnProduct" class="com.mystore.testcases.AddToCartTests"/>
+        <method signature="LoginPageTests.loginTests(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.LoginPageTests@4470f8a6]" name="loginTests" class="com.mystore.testcases.LoginPageTests"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="AddToCartTests.clickOnProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartTests@f2ff811]" name="clickOnProduct" class="com.mystore.testcases.AddToCartTests"/>
+      </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="IndexPageTests.VerifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" name="VerifyLogo" class="com.mystore.testcases.IndexPageTests"/>
-        <method signature="IndexPageTests.verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" name="verifyTitle" class="com.mystore.testcases.IndexPageTests"/>
-        <method signature="IndexPageTests.VerifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" name="VerifyLogo" class="com.mystore.testcases.IndexPageTests"/>
-        <method signature="IndexPageTests.verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" name="verifyTitle" class="com.mystore.testcases.IndexPageTests"/>
-        <method signature="IndexPageTests.VerifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" name="VerifyLogo" class="com.mystore.testcases.IndexPageTests"/>
-        <method signature="IndexPageTests.verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" name="verifyTitle" class="com.mystore.testcases.IndexPageTests"/>
+        <method signature="LoginPageTests.loginTests(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.LoginPageTests@4470f8a6]" name="loginTests" class="com.mystore.testcases.LoginPageTests"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2022-07-05T13:54:06 IST" name="Chrome-Test" finished-at="2022-07-05T13:55:06 IST" duration-ms="59920">
-      <class name="com.mystore.testcases.IndexPageTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" started-at="2022-07-05T13:54:06 IST" name="setup" finished-at="2022-07-05T13:54:25 IST" duration-ms="18338" status="PASS">
+    <test started-at="2022-07-05T17:00:50 IST" name="Sanity" finished-at="2022-07-05T17:01:45 IST" duration-ms="54859">
+      <class name="com.mystore.testcases.AccountCreationTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AccountCreationTests@65b3f4a4]" started-at="2022-07-05T17:01:14 IST" name="setup" finished-at="2022-07-05T17:01:24 IST" duration-ms="9662" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +29,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" started-at="2022-07-05T13:54:25 IST" name="VerifyLogo" finished-at="2022-07-05T13:54:40 IST" duration-ms="15371" status="PASS">
+        <test-method signature="validateCreateText(java.lang.String)[pri:0, instance:com.mystore.testcases.AccountCreationTests@65b3f4a4]" started-at="2022-07-05T17:01:24 IST" name="validateCreateText" data-provider="email" finished-at="2022-07-05T17:01:32 IST" duration-ms="8858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ghfsdtyf9789g@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLogo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" started-at="2022-07-05T13:54:40 IST" name="teardown" finished-at="2022-07-05T13:54:41 IST" duration-ms="1243" status="PASS">
+        </test-method> <!-- validateCreateText -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.AccountCreationTests@65b3f4a4]" started-at="2022-07-05T17:01:32 IST" name="teardown" finished-at="2022-07-05T17:01:33 IST" duration-ms="375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" started-at="2022-07-05T13:54:41 IST" name="setup" finished-at="2022-07-05T13:55:06 IST" duration-ms="24330" status="PASS">
+      </class> <!-- com.mystore.testcases.AccountCreationTests -->
+      <class name="com.mystore.testcases.AddToCartTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartTests@f2ff811]" started-at="2022-07-05T17:01:33 IST" name="setup" finished-at="2022-07-05T17:01:42 IST" duration-ms="8692" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,107 +57,133 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" started-at="2022-07-05T13:55:06 IST" name="verifyTitle" finished-at="2022-07-05T13:55:06 IST" duration-ms="35" status="PASS">
+        <test-method signature="clickOnProduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartTests@f2ff811]" started-at="2022-07-05T17:01:42 IST" name="clickOnProduct" data-provider="getProduct" finished-at="2022-07-05T17:01:43 IST" duration-ms="1664" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[t-shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.66)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'P2CLAP-52GXD63', ip: '192.168.43.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ce91298a3206b2506c3b957ec55ac02, actions {actions=[org.openqa.selenium.interactions.Sequence@ee2ae9a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\GARVIT~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:18063/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ce91298a3206b2506c3b957ec55ac02]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.66)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'P2CLAP-52GXD63', ip: '192.168.43.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ce91298a3206b2506c3b957ec55ac02, actions {actions=[org.openqa.selenium.interactions.Sequence@ee2ae9a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\GARVIT~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:18063/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ce91298a3206b2506c3b957ec55ac02
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at com.mystore.actiondrivers.Action.click(Action.java:46)
+at com.mystore.PageObjects.IndexPage.searchProduct(IndexPage.java:48)
+at com.mystore.testcases.AddToCartTests.clickOnProduct(AddToCartTests.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.IndexPageTests@313b2ea6]" started-at="2022-07-05T13:55:06 IST" name="teardown" finished-at="2022-07-05T13:55:06 IST" duration-ms="551" status="PASS">
+        </test-method> <!-- clickOnProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.AddToCartTests@f2ff811]" started-at="2022-07-05T17:01:44 IST" name="teardown" finished-at="2022-07-05T17:01:45 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.mystore.testcases.IndexPageTests -->
-    </test> <!-- Chrome-Test -->
-    <test started-at="2022-07-05T13:54:06 IST" name="MicroSoftEdge" finished-at="2022-07-05T13:55:09 IST" duration-ms="62252">
-      <class name="com.mystore.testcases.IndexPageTests">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:54:06 IST" name="loadConfig" finished-at="2022-07-05T13:54:06 IST" duration-ms="447" status="PASS">
+      </class> <!-- com.mystore.testcases.AddToCartTests -->
+      <class name="com.mystore.testcases.LoginPageTests">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.LoginPageTests@4470f8a6]" started-at="2022-07-05T17:00:50 IST" name="loadConfig" finished-at="2022-07-05T17:00:50 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:54:06 IST" name="setup" finished-at="2022-07-05T13:54:29 IST" duration-ms="22907" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.LoginPageTests@4470f8a6]" started-at="2022-07-05T17:00:51 IST" name="setup" finished-at="2022-07-05T17:01:05 IST" duration-ms="13447" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MicrosoftEdge]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:54:29 IST" name="VerifyLogo" finished-at="2022-07-05T13:54:40 IST" duration-ms="10802" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:54:40 IST" name="teardown" finished-at="2022-07-05T13:54:42 IST" duration-ms="1431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:54:42 IST" name="setup" finished-at="2022-07-05T13:55:08 IST" duration-ms="26523" status="PASS">
+        <test-method signature="loginTests(java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.LoginPageTests@4470f8a6]" started-at="2022-07-05T17:01:05 IST" name="loginTests" data-provider="credentials" finished-at="2022-07-05T17:01:13 IST" duration-ms="8724" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MicrosoftEdge]]>
+                <![CDATA[garvitofficial97@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Qazxsw@9549]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:55:08 IST" name="verifyTitle" finished-at="2022-07-05T13:55:08 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:55:08 IST" name="teardown" finished-at="2022-07-05T13:55:09 IST" duration-ms="518" status="PASS">
+        </test-method> <!-- loginTests -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.LoginPageTests@4470f8a6]" started-at="2022-07-05T17:01:13 IST" name="teardown" finished-at="2022-07-05T17:01:14 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mystore.testcases.IndexPageTests@78ffe6dc]" started-at="2022-07-05T13:55:17 IST" name="afterSuite" finished-at="2022-07-05T13:55:17 IST" duration-ms="535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.mystore.testcases.IndexPageTests -->
-    </test> <!-- MicroSoftEdge -->
-    <test started-at="2022-07-05T13:54:06 IST" name="Firefox-Test" finished-at="2022-07-05T13:55:17 IST" duration-ms="70581">
-      <class name="com.mystore.testcases.IndexPageTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" started-at="2022-07-05T13:54:06 IST" name="setup" finished-at="2022-07-05T13:54:39 IST" duration-ms="33093" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" started-at="2022-07-05T13:54:39 IST" name="VerifyLogo" finished-at="2022-07-05T13:54:40 IST" duration-ms="622" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" started-at="2022-07-05T13:54:40 IST" name="teardown" finished-at="2022-07-05T13:54:43 IST" duration-ms="2687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" started-at="2022-07-05T13:54:43 IST" name="setup" finished-at="2022-07-05T13:55:15 IST" duration-ms="32584" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" started-at="2022-07-05T13:55:15 IST" name="verifyTitle" finished-at="2022-07-05T13:55:15 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.mystore.testcases.IndexPageTests@46fa7c39]" started-at="2022-07-05T13:55:15 IST" name="teardown" finished-at="2022-07-05T13:55:17 IST" duration-ms="1547" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.mystore.testcases.IndexPageTests -->
-    </test> <!-- Firefox-Test -->
-  </suite> <!-- CrossBrowser -->
+      </class> <!-- com.mystore.testcases.LoginPageTests -->
+    </test> <!-- Sanity -->
+  </suite> <!-- Suite -->
 </testng-results>

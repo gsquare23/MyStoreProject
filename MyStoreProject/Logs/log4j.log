@@ -843,3 +843,31 @@
 2022-07-05 13:55:17 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
 2022-07-05 13:55:17 DEBUG cache:45 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
 2022-07-05 13:55:17 DEBUG cache:45 - Loading template for "commons/commons-inject-js.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/garvit.c.gupta/.m2/repository/com/aventstack/extentreports/5.0.5/extentreports-5.0.5.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+2022-07-05 14:59:56 INFO  Log:22 - This is BeforeSuite Method
+2022-07-05 15:00:26 INFO  Log:10 - =====================================loginTests TEST START=========================================
+2022-07-05 15:00:26 INFO  Log:22 - user is going to click on SignIn
+2022-07-05 15:00:33 INFO  Log:22 - User is going to enter username and password
+2022-07-05 15:00:39 INFO  Log:22 - User is trying to verifying is able to login or not
+2022-07-05 15:00:39 INFO  Log:22 - User is able to login Successfully
+2022-07-05 15:00:39 INFO  Log:15 - =====================================loginTests TEST END=========================================
+2022-07-05 15:01:23 INFO  Log:10 - =====================================validateCreateText TEST START=========================================
+2022-07-05 16:58:09 INFO  Log:22 - This is BeforeSuite Method
+2022-07-05 16:58:26 INFO  Log:10 - =====================================loginTests TEST START=========================================
+2022-07-05 16:58:26 INFO  Log:22 - user is going to click on SignIn
+2022-07-05 16:58:44 INFO  Log:22 - User is going to enter username and password
+2022-07-05 16:58:50 INFO  Log:22 - User is trying to verifying is able to login or not
+2022-07-05 16:58:50 INFO  Log:22 - User is able to login Successfully
+2022-07-05 16:58:50 INFO  Log:15 - =====================================loginTests TEST END=========================================
+2022-07-05 16:59:01 INFO  Log:10 - =====================================validateCreateText TEST START=========================================
+2022-07-05 16:59:09 INFO  Log:15 - =====================================validateCreateText TEST END=========================================
+2022-07-05 16:59:18 INFO  Log:10 - =====================================clickOnProduct TEST START=========================================
+2022-07-05 17:00:50 INFO  Log:22 - This is BeforeSuite Method
+2022-07-05 17:01:05 INFO  Log:10 - =====================================loginTests TEST START=========================================
+2022-07-05 17:01:05 INFO  Log:22 - user is going to click on SignIn
+2022-07-05 17:01:10 INFO  Log:22 - User is going to enter username and password
+2022-07-05 17:01:13 INFO  Log:22 - User is trying to verifying is able to login or not
+2022-07-05 17:01:13 INFO  Log:22 - User is able to login Successfully
+2022-07-05 17:01:13 INFO  Log:15 - =====================================loginTests TEST END=========================================
+2022-07-05 17:01:24 INFO  Log:10 - =====================================validateCreateText TEST START=========================================
+2022-07-05 17:01:32 INFO  Log:15 - =====================================validateCreateText TEST END=========================================
+2022-07-05 17:01:42 INFO  Log:10 - =====================================clickOnProduct TEST START=========================================

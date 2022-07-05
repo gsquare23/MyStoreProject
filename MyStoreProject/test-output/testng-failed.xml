@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="6" parallel="tests" name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.mystore.utility.ListenersClass"/>
   </listeners>
-  <test thread-count="6" parallel="tests" name="Chrome-Test(failed)">
+  <test thread-count="5" name="Sanity(failed)">
     <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.mystore.testcases.IndexPageTests">
+      <class name="com.mystore.testcases.AddToCartTests">
         <methods>
-          <include name="verifyTitle"/>
+          <include name="clickOnProduct" invocation-numbers="0"/>
           <include name="loadConfig"/>
           <include name="setup"/>
-          <include name="afterSuite"/>
           <include name="teardown"/>
-          <include name="VerifyLogo"/>
         </methods>
-      </class> <!-- com.mystore.testcases.IndexPageTests -->
+      </class> <!-- com.mystore.testcases.AddToCartTests -->
     </classes>
-  </test> <!-- Chrome-Test(failed) -->
-  <test thread-count="6" parallel="tests" name="Firefox-Test(failed)">
-    <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="com.mystore.testcases.IndexPageTests">
-        <methods>
-          <include name="verifyTitle"/>
-          <include name="loadConfig"/>
-          <include name="setup"/>
-          <include name="afterSuite"/>
-          <include name="teardown"/>
-          <include name="VerifyLogo"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.IndexPageTests -->
-    </classes>
-  </test> <!-- Firefox-Test(failed) -->
-</suite> <!-- Failed suite [CrossBrowser] -->
+  </test> <!-- Sanity(failed) -->
+</suite> <!-- Failed suite [Suite] -->
