@@ -8,62 +8,21 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">361,937</td><td></td><td></td></tr>
+<tr><th colspan="8">CrossBrowser</th></tr>
+<tr><td><a href="#t0">Chrome-Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">59,920</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">MicroSoftEdge</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">62,252</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Firefox-Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">70,581</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">192,753</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mystore.testcases.EndToEnd</td><td><a href="#m0">endToEndTest</a></td><td rowspan="1">1657007417623</td><td rowspan="1">5140</td></tr><tr class="failedodd"><td rowspan="1">com.mystore.testcases.OrderPageTests</td><td><a href="#m1">verifyTotalPrice</a></td><td rowspan="1">1657007353886</td><td rowspan="1">1867</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.mystore.testcases.AccountCreationTests</td><td><a href="#m2">validateCreateText</a></td><td rowspan="1">1657007141612</td><td rowspan="1">11977</td></tr><tr class="passedodd"><td rowspan="1">com.mystore.testcases.AddToCartTests</td><td><a href="#m3">clickOnProduct</a></td><td rowspan="1">1657007178029</td><td rowspan="1">33715</td></tr><tr class="passedeven"><td rowspan="2">com.mystore.testcases.HomePageTests</td><td><a href="#m4">orderHistoryTests</a></td><td rowspan="1">1657007267824</td><td rowspan="1">19470</td></tr><tr class="passedeven"><td><a href="#m5">wishListTests</a></td><td rowspan="1">1657007313999</td><td rowspan="1">20494</td></tr><tr class="passedodd"><td rowspan="2">com.mystore.testcases.IndexPageTests</td><td><a href="#m6">VerifyLogo</a></td><td rowspan="1">1657007377170</td><td rowspan="1">69</td></tr><tr class="passedodd"><td><a href="#m7">verifyTitle</a></td><td rowspan="1">1657007391037</td><td rowspan="1">13</td></tr><tr class="passedeven"><td rowspan="1">com.mystore.testcases.LoginPageTests</td><td><a href="#m8">loginTests</a></td><td rowspan="1">1657007096726</td><td rowspan="1">28566</td></tr><tr class="passedodd"><td rowspan="1">com.mystore.testcases.SearchResultTests</td><td><a href="#m9">validateProductAvaility</a></td><td rowspan="1">1657007238394</td><td rowspan="1">5021</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CrossBrowser</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome-Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mystore.testcases.IndexPageTests</td><td><a href="#m0">VerifyLogo</a></td><td rowspan="1">1657009465200</td><td rowspan="1">15371</td></tr><tr class="passedeven"><td><a href="#m1">verifyTitle</a></td><td rowspan="1">1657009506158</td><td rowspan="1">35</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">MicroSoftEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mystore.testcases.IndexPageTests</td><td><a href="#m2">VerifyLogo</a></td><td rowspan="1">1657009469768</td><td rowspan="1">10802</td></tr><tr class="passedeven"><td><a href="#m3">verifyTitle</a></td><td rowspan="1">1657009508538</td><td rowspan="1">26</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Firefox-Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.mystore.testcases.IndexPageTests</td><td><a href="#m4">VerifyLogo</a></td><td rowspan="1">1657009479953</td><td rowspan="1">622</td></tr><tr class="passedeven"><td><a href="#m5">verifyTitle</a></td><td rowspan="1">1657009515854</td><td rowspan="1">10</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.mystore.testcases.EndToEnd#endToEndTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>t-shirt</td><td>2.0</td><td>M</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.66)
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;P2CLAP-52GXD63&apos;, ip: &apos;192.168.43.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32d89a2754be4b1327b2ba99f9ce471d, actions {actions=[org.openqa.selenium.interactions.Sequence@8585cdd]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\GARVIT~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:25773}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:25773/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 32d89a2754be4b1327b2ba99f9ce471d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at com.mystore.actiondrivers.Action.click(Action.java:46)
-	at com.mystore.PageObjects.IndexPage.searchProduct(IndexPage.java:48)
-	at com.mystore.testcases.EndToEnd.endToEndTest(EndToEnd.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.mystore.testcases.OrderPageTests#verifyTotalPrice</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>t-shirt</td><td>2.0</td><td>M</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.66)
-Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;P2CLAP-52GXD63&apos;, ip: &apos;192.168.43.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f42357db91607e57d9e1e557fb1b85d2, actions {actions=[org.openqa.selenium.interactions.Sequence@4b00d59]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\GARVIT~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:25578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:25578/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f42357db91607e57d9e1e557fb1b85d2
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at com.mystore.actiondrivers.Action.click(Action.java:46)
-	at com.mystore.PageObjects.IndexPage.searchProduct(IndexPage.java:48)
-	at com.mystore.testcases.OrderPageTests.verifyTotalPrice(OrderPageTests.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.mystore.testcases.AccountCreationTests#validateCreateText</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ghfsdtyf9789g@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.mystore.testcases.AddToCartTests#clickOnProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>t-shirt</td><td>2.0</td><td>M</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.mystore.testcases.HomePageTests#orderHistoryTests</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>garvitofficial97@gmail.com</td><td>Qazxsw@9549</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.mystore.testcases.HomePageTests#wishListTests</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>garvitofficial97@gmail.com</td><td>Qazxsw@9549</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.mystore.testcases.IndexPageTests#VerifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.mystore.testcases.IndexPageTests#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.mystore.testcases.LoginPageTests#loginTests</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>garvitofficial97@gmail.com</td><td>Qazxsw@9549</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.mystore.testcases.SearchResultTests#validateProductAvaility</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>t-shirt</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome-Test</h2><h3 id="m0">com.mystore.testcases.IndexPageTests#VerifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.mystore.testcases.IndexPageTests#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MicroSoftEdge</h2><h3 id="m2">com.mystore.testcases.IndexPageTests#VerifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.mystore.testcases.IndexPageTests#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Firefox-Test</h2><h3 id="m4">com.mystore.testcases.IndexPageTests#VerifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.mystore.testcases.IndexPageTests#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
