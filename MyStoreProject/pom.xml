@@ -26,7 +26,7 @@
 					<configuration>
 						<testFailureIgnore>true</testFailureIgnore>
 						<suiteXmlFiles>
-							<suiteXmlfile>testng.xml</suiteXmlfile>
+							<suiteXmlfile>${xmlFiles}</suiteXmlfile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
